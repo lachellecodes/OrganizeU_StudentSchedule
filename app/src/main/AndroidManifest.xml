@@ -4,8 +4,8 @@
 
     <application
         android:allowBackup="true"
-        android:dataExtractionRules="@xml/data_extraction_rules"
-        android:fullBackupContent="@xml/backup_rules"
+
+
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
@@ -13,8 +13,8 @@
         android:theme="@style/Theme.StudentScheduler"
         tools:targetApi="31">
         <activity
-            android:name=".UI.ClassDetails"
-            android:label="Class Details"
+            android:name=".UI.CourseDetails"
+            android:label=" Course Details"
             android:parentActivityName=".UI.TermDetails"
             android:exported="false">
             <meta-data
@@ -24,9 +24,10 @@
         <activity
             android:name=".UI.TermDetails"
             android:exported="false"
-            android:label="Term Details and Class List"
+            android:label="Term Details and Course List"
             android:parentActivityName=".UI.TermList">
             <meta-data
+
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
